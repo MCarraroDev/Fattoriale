@@ -1,66 +1,112 @@
-# Calcolatore di Fattoriali
+<a name="readme-top"></a>
 
-Un semplice programma in C++ per calcolare il fattoriale di numeri interi positivi.
+<!-- INTESTAZIONE DEL PROGETTO -->
+<br />
+<div align="center">
+  <h3 align="center">Calcolatore del Fattoriale</h3>
 
-## Descrizione
+  <p align="center">
+    Un programma C++ efficiente per calcolare il fattoriale di numeri grandi
+    <br />
+  </p>
+</div>
 
-Questo programma calcola il fattoriale di numeri interi utilizzando la libreria GMP per gestire numeri molto grandi.
+<!-- INDICE -->
+<details>
+  <summary>Indice</summary>
+  <ol>
+    <li>
+      <a href="#informazioni-sul-progetto">Informazioni sul Progetto</a>
+      <ul>
+        <li><a href="#sviluppato-con">Sviluppato Con</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#per-iniziare">Per Iniziare</a>
+      <ul>
+        <li><a href="#prerequisiti">Prerequisiti</a></li>
+        <li><a href="#installazione">Installazione</a></li>
+      </ul>
+    </li>
+    <li><a href="#utilizzo">Utilizzo</a></li>
+    <li><a href="#licenza">Licenza</a></li>
+  </ol>
+</details>
 
-## Prerequisiti
+<!-- INFORMAZIONI SUL PROGETTO -->
+## Informazioni sul Progetto
 
-- Compilatore C++
-- Libreria GMP (GNU Multiple Precision Arithmetic)
+Questo programma è stato creato per calcolare il fattoriale di numeri interi positivi utilizzando la libreria GMP (GNU Multiple Precision Arithmetic). Grazie a questa libreria, il programma può gestire numeri estremamente grandi senza problemi di overflow, rendendolo ideale per calcoli matematici che richiedono alta precisione.
 
-## Installazione e Compilazione
+### Sviluppato Con
 
-### Windows
-1. Installa la libreria GMP usando MSYS2:
-```bash
-pacman -S mingw-w64-x86_64-gmp
-```
+* [![C++][C++-shield]][C++-url]
+* [![GMP][GMP-shield]][GMP-url]
 
-2. Compila:
-```bash
-g++ main.cpp -o fattoriale.exe -lgmpxx -lgmp
-```
+<!-- PER INIZIARE -->
+## Per Iniziare
 
-### Ubuntu/Debian
-```bash
-sudo apt-get install libgmp-dev
-g++ main.cpp -o fattoriale.out -lgmpxx -lgmp
-```
+Segui queste semplici istruzioni per ottenere un eseguibile funzionante del progetto.
 
-### Fedora
-```bash
-sudo dnf install gmp-devel
-g++ main.cpp -o fattoriale.out -lgmpxx -lgmp
-```
+### Prerequisiti
 
-### macOS
-```bash
-brew install gmp
-clang++ main.cpp -o fattoriale.out -lgmpxx -lgmp
-```
+* Compilatore C++
+* Libreria GMP
 
+### Installazione
+
+1. Installa la libreria GMP
+   * Windows (usando MSYS2):
+   ```sh
+   pacman -S mingw-w64-x86_64-gmp
+   ```
+   * Ubuntu/Debian:
+   ```sh
+   sudo apt-get install libgmp-dev
+   ```
+   * Fedora:
+   ```sh
+   sudo dnf install gmp-devel
+   ```
+   * macOS:
+   ```sh
+   brew install gmp
+   ```
+
+
+2. Clona il repository (o scaricalo in formato .zip)
+   ```sh
+   git clone https://github.com/MCarraroDev/Fattoriale.git
+   ```
+
+3. Compila il programma
+   ```sh
+   g++ main.cpp -o fattoriale -lgmpxx -lgmp
+   ```
+
+<!-- UTILIZZO -->
 ## Utilizzo
 
-1. Avvia il programma
-2. Inserisci un numero intero positivo
-3. Il programma calcolerà il fattoriale
-4. Scegli se vuoi calcolare un altro fattoriale (s/n)
+1. Avvia il programma:
+   ```sh
+   ./fattoriale
+   ```
 
-## Caratteristiche
+2. Inserisci un numero intero positivo quando richiesto
 
-- Calcolo del fattoriale di numeri positivi
-- Gestione di numeri molto grandi grazie alla libreria GMP
-- Possibilità di calcolare più fattoriali in sequenza
-- Interfaccia in italiano
+3. Il programma mostrerà il risultato del fattoriale
 
-## File del Progetto
+4. Puoi scegliere se calcolare un altro fattoriale (s/n)
 
-- `main.cpp` - Codice sorgente
-- `README.md` - Documentazione
-
+<!-- LICENZA -->
 ## Licenza
 
-Questo progetto è open source, distribuito sotto licenza MIT.
+Distribuito sotto licenza MIT. Vedi `LICENSE` per maggiori informazioni.
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[C++-shield]: https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white
+[C++-url]: https://isocpp.org/
+[GMP-shield]: https://img.shields.io/badge/GMP-00599C?style=for-the-badge&logo=gnu&logoColor=white
+[GMP-url]: https://gmplib.org/
+
+<p align="right">(<a href="#readme-top">torna all'inizio</a>)</p>
