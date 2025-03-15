@@ -3,7 +3,7 @@
 <!-- INTESTAZIONE DEL PROGETTO -->
 <br />
 <div align="center">
-  <h3 align="center">Calcolatore del Fattoriale</h3>
+  <h1 align="center">Calcolatore del Fattoriale</h3>
 
   <p align="center">
     Un programma C++ efficiente per calcolare il fattoriale di numeri grandi
