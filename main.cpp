@@ -4,13 +4,15 @@
 using namespace std;
 
 int main() {
-    mpz_class fatt = 1;
+    mpz_class fatt;
     int num;
-    while (true)
-    {
+    char continua;
+    
+    do {
+        fatt = 1;
         cout << "Inserisci un numero: ";
         cin >> num;
-    
+        
         if (num < 0) {
             cout << "Il fattoriale non è definito per numeri negativi." << endl;
         } else {
@@ -19,7 +21,11 @@ int main() {
             }
             cout << "Il fattoriale di " << num << " è: " << fatt << endl;
         }
-    }
+        
+        cout << "\nVuoi calcolare un altro fattoriale? (s/n): ";
+        cin >> continua;
+        
+    } while (continua == 's' || continua == 'S');
     
     return 0;
 }

@@ -1,1 +1,66 @@
-g++ -o main.exe main.cpp -lgmpxx -lgmp
+# Calcolatore del Fattoriale
+
+Un semplice programma in C++ per calcolare il fattoriale di numeri interi positivi.
+
+## Descrizione
+
+Questo programma calcola il fattoriale di numeri interi utilizzando la libreria GMP per gestire numeri molto grandi.
+
+## Prerequisiti
+
+- Compilatore C++
+- Libreria GMP (GNU Multiple Precision Arithmetic)
+
+## Installazione e Compilazione
+
+### Windows
+1. Installa la libreria GMP usando MSYS2:
+```bash
+pacman -S mingw-w64-x86_64-gmp
+```
+
+2. Compila:
+```bash
+g++ main.cpp -o fattoriale.exe -lgmpxx -lgmp
+```
+
+### Ubuntu/Debian
+```bash
+sudo apt-get install libgmp-dev
+g++ main.cpp -o fattoriale.out -lgmpxx -lgmp
+```
+
+### Fedora
+```bash
+sudo dnf install gmp-devel
+g++ main.cpp -o fattoriale.out -lgmpxx -lgmp
+```
+
+### macOS
+```bash
+brew install gmp
+clang++ main.cpp -o fattoriale.out -lgmpxx -lgmp
+```
+
+## Utilizzo
+
+1. Avvia il programma
+2. Inserisci un numero intero positivo
+3. Il programma calcolerà il fattoriale
+4. Scegli se vuoi calcolare un altro fattoriale (s/n)
+
+## Caratteristiche
+
+- Calcolo del fattoriale di numeri positivi
+- Gestione di numeri molto grandi grazie alla libreria GMP
+- Possibilità di calcolare più fattoriali in sequenza
+- Interfaccia in italiano
+
+## File del Progetto
+
+- `main.cpp` - Codice sorgente
+- `README.md` - Documentazione
+
+## Licenza
+
+Questo progetto è open source, distribuito sotto licenza MIT.
